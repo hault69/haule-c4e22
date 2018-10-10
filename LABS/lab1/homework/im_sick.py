@@ -18,7 +18,6 @@ html_content = html_content1.replace("{{benh}}",b)
 msg = Message('Im Sick',to='hautechkids@gmail.com',html=html_content)
 if now.hour == 7:
     gmail.send(msg)
-    break
 else:
     print("chua den gio gui mail!!")
 #có thể dùng vòng lặp while để chạy đến thời gian yêu cầu gửi mail. tuy nhiên
