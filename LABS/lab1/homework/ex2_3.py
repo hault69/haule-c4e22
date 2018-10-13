@@ -12,7 +12,7 @@ posts = db['posts']
 
 #create
 post = {
-    'tilte': 'Xin chào techkids!!',
+    'title': 'Xin chào techkids!!',
     'content': 'Rất vui khi được học tập cùng mọi người, hy vọng sau khóa học tất cả chúng ta sẽ đạt được một kết quả ưng ý',
     'author': 'Hậu Lê' 
 }
