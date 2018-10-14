@@ -19,10 +19,10 @@ for tr in tr_list:
     td_list = tr.find_all("td")
     for td in td_list:
         names = td_list[0].string
-        quy4 = td_list[1].string
-        quy1 = td_list[2].string
-        quy2 = td_list[3].string
-        quy3 = td_list[4].string
+        quy1 = td_list[1].string
+        quy2 = td_list[2].string
+        quy3 = td_list[3].string
+        quy4 = td_list[4].string
         new = OrderedDict({
             'Name': names,
             'Quý 1 - 2017': quy1,
