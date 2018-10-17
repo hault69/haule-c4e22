@@ -29,11 +29,85 @@ def get_shapes():
 
 
 def generate_quiz():
+    a = choice(shapes)
+    t = a['text']
+    b = choice(shapes)
+    c = b['color']
+    d = choice(shapes)
+    # r = d['rect']
+    ra = randint(0,1) # 0 : meaning, 1: color
     return [
-                shapes['RED'],
-                shapes['#4CAF50'],
-                randint(0, 1) # 0 : meaning, 1: color
+                t,
+                c,
+                ra,
             ]
-
+# t = generate_quiz()
+# print(t)
 def mouse_press(x, y, text, color, quiz_type):
-    return True
+    text,color,quiz_type = generate_quiz()
+    if quiz_type == 0:
+        if text == "blue":
+            if 20 <= x <= 120 and 60 <= y <= 160:
+                if quiz_type == 0:
+                    return True
+                else: 
+                    return False
+            else:
+                return False 
+        elif text == "red":
+            if 140 <= x <= 240 and 60 <= y <= 160:
+                if quiz_type == 0:
+                    return True
+                else:
+                    return False
+            else:
+                return False
+        elif text == "yellow":
+            if 20 <= x <= 120 and 180 <= y <= 280:
+                if quiz_type == 0:
+                    return True
+                else: 
+                    return False
+            else:
+                return False
+        elif text == "green":
+            if 140 <= x <= 240 and 180 <= y <= 280:
+                if quiz_type == 0:
+                    return True
+                else: 
+                    return False
+            else:
+                return False
+    elif quiz_type == 1:
+        if color == "#3F51B5":
+            if 20 <= x <= 120 and 60 <= y <= 160:
+                if quiz_type == 1:
+                    return True
+                else:
+                    return False
+            else: 
+                return False
+        elif color == "#C62828":
+            if 140 <= x <= 240 and 60 <= y <= 160:
+                if quiz_type == 1:
+                    return True
+                else:
+                    return False
+            else: 
+                return False
+        elif color == "#FFD600":    
+            if 20 <= x <= 120 and 180 <= y <= 280:
+                if quiz_type == 1:
+                    return True
+                else:
+                    return False
+            else: 
+                return False
+        elif color =="#4CAF50":
+            if 140 <= x <= 240 and 180 <= y <= 280:
+                if quiz_type == 1:
+                    return True
+                else:
+                    return False
+            else: 
+                return False
