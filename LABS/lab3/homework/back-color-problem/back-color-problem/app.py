@@ -4,7 +4,6 @@ from PyQt5.QtGui import QPainter, QColor, QFont, QBrush
 from PyQt5.QtCore import Qt, QRectF, QTimer
 from PyQt5.QtMultimedia import  QSound
 from random import choice
-
 import back_color
 
 class GameWindow(QWidget):
