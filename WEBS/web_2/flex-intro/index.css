@@ -9,7 +9,6 @@ html,body {
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
-    mar
 }
 .rect {
     width: 80px;
