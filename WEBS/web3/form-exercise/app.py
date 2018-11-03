@@ -1,5 +1,8 @@
 from flask import Flask,render_template,request
+from register import Register
+import mlab
 app = Flask(__name__)
+mlab.connect()
 
 @app.route("/", methods=["GET","POST"])
 def register():
@@ -15,6 +18,8 @@ def register():
         gender = form['gender']
         city = form['city']
         print(firstname+" "+lastname,mail,yob,gender,city, sep=" , ")
+        r = Register(firstname = firstname, lastname = lastname, email = mail, yob = yob, gender = gender, city = city)
+        r.save()
         return "Successful"
 
 

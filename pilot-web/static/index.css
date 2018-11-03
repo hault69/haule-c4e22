@@ -60,3 +60,10 @@ html, body {
       border-width: 1px;
       padding-left: 4px; 
   }
+  .polls{
+    width: 25%;
+    border-radius: 3px;
+    border: 0.5px rgb(123, 123, 230) solid;
+    padding: 3px 3px 3px 3px;
+    margin: 3px
+  }
